@@ -148,13 +148,17 @@
 
   .main_left {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 0;
     border-right: none;
+  }
+
+  .main_left img {
+    width: 100%;
   }
   
   .main_right {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 0;
   }
   
   .main_middlebottom_split {
@@ -171,6 +175,13 @@
   
   .main_middle_split {
     width: 100%;
+  }
+
+  .main_middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
   }
  
 }
