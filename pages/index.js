@@ -61,6 +61,12 @@ export default function Home({ blogs }) {
 
               <h1 className={styles.hometitle}>{blog.fields.title}</h1>
               <p className={styles.homeparagraph}>{blog.fields.subTItle}</p>
+
+              <div className={styles.readmorebtn}>
+                <Link href={"/blog-details/" + blog.fields.slug}>
+                  <a>Read now</a>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
@@ -90,6 +96,11 @@ export default function Home({ blogs }) {
               </div>
               <h1 className={styles.hometitle}>{blog.fields.title}</h1>
               <p className={styles.homeparagraph}>{blog.fields.subTItle}</p>
+              <div className={styles.readmorebtn}>
+                <Link href={"/blog-details/" + blog.fields.slug}>
+                  <a>Read now</a>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
@@ -125,6 +136,11 @@ export default function Home({ blogs }) {
               </div>
               <h1 className={styles.hometitle}>{blog.fields.title}</h1>
               <p className={styles.homeparagraph}>{blog.fields.subTItle}</p>
+              <div className={styles.readmorebtn}>
+                <Link href={"/blog-details/" + blog.fields.slug}>
+                  <a>Read now</a>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
@@ -159,9 +175,16 @@ export default function Home({ blogs }) {
                 </div>
                 <h1 className={styles.hometitle}>{blog.fields.title}</h1>
                 <p className={styles.homeparagraph}>{blog.fields.subTItle}</p>
-                <div className={styles.dauthor}>
-                  <div className={styles.authodash} />
-                  <p>{blog.fields.authors[0]}</p>
+                <div className={styles.thebottompart}>
+                  <div className={styles.dauthor}>
+                    <div className={styles.authodash} />
+                    <p>{blog.fields.authors[0]}</p>
+                  </div>
+                  <div className={styles.readmorebtnn}>
+                    <Link href={"/blog-details/" + blog.fields.slug}>
+                      <a>Read now</a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

@@ -62,7 +62,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 16px;
   color: #2e2e35;
 }
@@ -70,7 +70,7 @@
 .main_right {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3.5rem;
 }
 
 .todaytrend {
@@ -121,4 +121,21 @@
 
 .main_middle_split {
   width: 70%;
+}
+
+.readmorebtn a {
+  color: #1d1d1f;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.thebottompart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.readmorebtnn a {
+  color: #1d1d1f;
+  text-decoration: underline;
 }

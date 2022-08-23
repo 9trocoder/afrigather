@@ -1,14 +1,14 @@
 .navvcnt {
-    margin: 1rem auto;
+  margin-bottom: 2rem;
 }
 
 .logoheaderbig {
-    font-size: 48px;
-   letter-spacing: -.6px;
-   cursor: pointer;
+  font-size: 56px;
+  letter-spacing: -0.6px;
+  cursor: pointer;
 }
 
 .logoheaderbig span {
-    font-family: 'Sacramento', cursive; 
-    font-weight: 400;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
 }
