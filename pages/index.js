@@ -55,7 +55,6 @@ export default function Home({ blogs }) {
                   <p>5 min read</p>
                 </div>
                 <div className={styles.dauthor}>
-                  <div className={styles.authodash} />
                   <p>{blog.fields.authors[0]}</p>
                 </div>
               </div>
@@ -86,7 +85,6 @@ export default function Home({ blogs }) {
                   <p>5 min read</p>
                 </div>
                 <div className={styles.dauthor}>
-                  <div className={styles.authodash} />
                   <p>{blog.fields.authors[0]}</p>
                 </div>
               </div>
@@ -122,7 +120,6 @@ export default function Home({ blogs }) {
                   <p>5 min read</p>
                 </div>
                 <div className={styles.dauthor}>
-                  <div className={styles.authodash} />
                   <p>{blog.fields.authors[0]}</p>
                 </div>
               </div>
@@ -136,32 +133,37 @@ export default function Home({ blogs }) {
           <Link href="/">View all</Link>
         </div>
         <div className={styles.main_middle_bottom}>
-          {blogs.slice(3, 6).map((blog, key) => (
-            <div key={key}>
-              <Image
-                src={"https:" + blog.fields.thumbnail.fields.file.url}
-                width={blog.fields.thumbnail.fields.file.details.image.width}
-                height={400}
-                alt={blog.fields.title}
-              />
-              <div className={styles.splititblog}>
-                <div className={styles.datetimeread}>
-                  <p>
-                    {new Date(blog.fields.date).toLocaleString("en-us", {
-                      month: "long",
-                      day: "numeric",
-                      year: "numeric",
-                    })}
-                  </p>
-                  <p>5 min read</p>
+          {blogs.slice(1, 12).map((blog, key) => (
+            <div key={key} className={styles.main_middlebottom_split}>
+              <div className={styles.mmbsimage}>
+                <Image
+                  src={"https:" + blog.fields.thumbnail.fields.file.url}
+                  width={400}
+                  height={300}
+                  alt={blog.fields.title}
+                />
+              </div>
+
+              <div className={styles.main_middle_split}>
+                <div className={styles.splititblog}>
+                  <div className={styles.datetimeread}>
+                    <p>
+                      {new Date(blog.fields.date).toLocaleString("en-us", {
+                        month: "long",
+                        day: "numeric",
+                        year: "numeric",
+                      })}
+                    </p>
+                    <p>5 min read</p>
+                  </div>
                 </div>
+                <h1 className={styles.hometitle}>{blog.fields.title}</h1>
+                <p className={styles.homeparagraph}>{blog.fields.subTItle}</p>
                 <div className={styles.dauthor}>
                   <div className={styles.authodash} />
                   <p>{blog.fields.authors[0]}</p>
                 </div>
               </div>
-              <h1 className={styles.hometitle}>{blog.fields.title}</h1>
-              <p className={styles.homeparagraph}>{blog.fields.subTItle}</p>
             </div>
           ))}
         </div>

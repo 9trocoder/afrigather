@@ -3,7 +3,9 @@
 }
 
 .logoheaderbig {
-    font-size: 36px;
+    font-size: 48px;
+   letter-spacing: -.6px;
+   cursor: pointer;
 }
 
 .logoheaderbig span {

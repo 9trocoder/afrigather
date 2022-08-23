@@ -1,0 +1,66 @@
+.logoheaderbig {
+    font-size: 48px;
+   letter-spacing: -.6px;
+   cursor: pointer;
+}
+
+.logoheaderbig span {
+    font-family: 'Sacramento', cursive; 
+    font-weight: 400;
+}
+
+.footercnt {
+    border-top: 2px solid #e6e6e6;
+    padding-top: 8rem;
+    margin-top: 5rem;
+}
+
+.sendmenews h2 {
+    font-size: 26px;
+    margin-bottom: 3rem;
+}
+
+.sendmenewsform {
+    border-bottom: 1px solid #1d1d1f;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.sendmenewsform input {
+    border: none;
+    background-color: transparent;
+    padding-bottom: .8rem;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sendmenewsform button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    padding-bottom: .8rem;
+    font-weight: 500;
+}
+
+.footerbottom {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+
+.footerbottom_right {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    font-size: 12px;
+    color: #999;
+}
