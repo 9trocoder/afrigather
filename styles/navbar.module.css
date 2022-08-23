@@ -12,3 +12,11 @@
   font-family: "Sacramento", cursive;
   font-weight: 400;
 }
+
+
+@media screen and (max-width: 700px) {
+    .logoheaderbig {
+        font-size: 38px;
+        font-weight: 700;
+    }
+}
