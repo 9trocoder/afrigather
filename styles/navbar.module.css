@@ -1,0 +1,12 @@
+.navvcnt {
+    margin: 1rem auto;
+}
+
+.logoheaderbig {
+    font-size: 36px;
+}
+
+.logoheaderbig span {
+    font-family: 'Sacramento', cursive; 
+    font-weight: 400;
+}
