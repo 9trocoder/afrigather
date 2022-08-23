@@ -154,7 +154,7 @@ export default function Home({ blogs }) {
               <div className={styles.mmbsimage}>
                 <Image
                   src={"https:" + blog.fields.thumbnail.fields.file.url}
-                  width={400}
+                  width={blog.fields.thumbnail.fields.file.details.image.width}
                   height={300}
                   alt={blog.fields.title}
                 />
