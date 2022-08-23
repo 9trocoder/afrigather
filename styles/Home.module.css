@@ -127,6 +127,7 @@
   color: #1d1d1f;
   text-decoration: underline;
   margin-top: 1rem;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .thebottompart {
@@ -138,6 +139,7 @@
 .readmorebtnn a {
   color: #1d1d1f;
   text-decoration: underline;
+  font-family: "Cormorant Garamond", serif;
 }
 
 @media screen and (max-width: 700px) {
