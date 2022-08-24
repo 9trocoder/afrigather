@@ -204,7 +204,7 @@
   .authodash {
     height: 2px;
     width: 40px;
-    background-color: #999;
+    background-color: #e6e6e6;
   }
   
   .dauthor p {
@@ -280,6 +280,7 @@
   
   .main_middlebottom_split {
     flex-direction: column;
+    gap: 0rem;
   }
 
   .mmbsimage {
@@ -313,13 +314,13 @@
   .dauthor {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .authodash {
     height: 2px;
-    width: 40px;
-    background-color: #999;
+    width: 30px;
+    background-color: #e6e6e6;
   }
   
   .dauthor p {
