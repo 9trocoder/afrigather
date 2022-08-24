@@ -40,7 +40,7 @@ export default function Home({ blogs }) {
               <Image
                 src={"https:" + blog.fields.thumbnail.fields.file.url}
                 width={blog.fields.thumbnail.fields.file.details.image.width}
-                height={blog.fields.thumbnail.fields.file.details.image.height}
+                height={500}
                 alt={blog.fields.title}
               />
               <div className={styles.splititblog}>
@@ -76,7 +76,7 @@ export default function Home({ blogs }) {
               <Image
                 src={"https:" + blog.fields.thumbnail.fields.file.url}
                 width={blog.fields.thumbnail.fields.file.details.image.width}
-                height={300}
+                height={500}
                 alt={blog.fields.title}
               />
               <div className={styles.splititblog}>
