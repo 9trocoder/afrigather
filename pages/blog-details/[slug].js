@@ -83,7 +83,7 @@ export default function BlogDetails({ blog, blogs }) {
           </div>
         </div>
 
-        <div>{documentToReactComponents(method)}</div>
+        <div className={styles.methodstyles}>{documentToReactComponents(method)}</div>
       </div>
       <div className={styles.blogdetailsright}>
         <h1 className={styles.denalsolike}>People Also read this</h1>
