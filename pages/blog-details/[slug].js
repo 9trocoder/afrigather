@@ -64,7 +64,7 @@ export default function BlogDetails({ blog, blogs }) {
         <Image
           src={"https:" + featuredImage.fields.file.url}
           width={featuredImage.fields.file.details.image.width}
-          height={500}
+          height={600}
           alt="featured image"
         />
         <div className={styles.splititblog}>
