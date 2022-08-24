@@ -70,7 +70,7 @@ export default function Blog({ blogs }) {
             <Image
               src={"https:" + blog.fields.thumbnail.fields.file.url}
               width={blog.fields.thumbnail.fields.file.details.image.width}
-              height={300}
+              height={500}
               alt={blog.fields.title}
             />
             <div className={styles.splititblog}>
