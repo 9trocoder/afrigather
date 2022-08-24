@@ -108,7 +108,7 @@ export default function Home({ blogs }) {
       <main>
         <div className={styles.todaytrend}>
           <h1>{"TODAY'S"} TRENDING NEWS</h1>
-          <Link href="/">View all</Link>
+          <Link href="/blogs">View all</Link>
         </div>
         <div className={styles.main_middle}>
           {blogs.slice(3, 6).map((blog, key) => (
@@ -146,7 +146,7 @@ export default function Home({ blogs }) {
         </div>
         <div className={styles.todaytrend}>
           <h1>THE LATEST ARTICLES</h1>
-          <Link href="/">View all</Link>
+          <Link href="/blogs">View all</Link>
         </div>
         <div className={styles.main_middle_bottom}>
           {blogs.slice(1, 12).map((blog, key) => (

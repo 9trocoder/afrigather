@@ -121,7 +121,7 @@ export default function BlogDetails({ blog, blogs }) {
           ))}
         </div>
 
-        <Link href="/">
+        <Link href="/blogs">
           <p className={styles.blogslugereadl}>View All</p>
         </Link>
       </div>
