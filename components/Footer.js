@@ -14,7 +14,7 @@ const Footer = () => {
       <div className={styles.footerbottom}>
         <Link href="/">
           <h1 className={styles.logoheaderbig}>
-            AFRI. <span>Gather</span>
+            AFRI. <span>Trump</span>
           </h1>
         </Link>
 

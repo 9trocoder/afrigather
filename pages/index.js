@@ -21,11 +21,10 @@ export async function getStaticProps() {
 }
 
 export default function Home({ blogs }) {
-  console.log(blogs);
   return (
     <>
       <Head>
-        <title>Afri-Gather</title>
+        <title>Afri-Trump</title>
         <meta
           name="description"
           content="This is the place to find the critic news"

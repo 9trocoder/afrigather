@@ -35,14 +35,10 @@ export default function Blog({ blogs }) {
     }
   }, [incre, blogs.length]);
 
-  console.log(blogs.length);
-
   const handleNext = () => {
     if (incre === blogs.length) {
       setShowNext(false);
       setIcre(incre--);
-
-      console.log("i was kicked");
     } else if (blogs.length > 6) {
       if (blogs.length > 6) {
         setShowPrev(true);
@@ -53,13 +49,11 @@ export default function Blog({ blogs }) {
       setShowNext(true);
     }
     setIcre((incre = incre + 1));
-    console.log(incre);
   };
 
   const handlePrevious = () => {
     setIcre((incre = incre - 1));
     setShowNext(true);
-    console.log(incre);
   };
 
   return (

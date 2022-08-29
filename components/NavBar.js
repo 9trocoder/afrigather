@@ -6,7 +6,7 @@ const NavBar = () => {
     <div className={styles.navvcnt}>
       <Link href="/">
         <h1 className={styles.logoheaderbig}>
-          AFRI. <span>Gather</span>
+          AFRI. <span>Trump</span>
         </h1>
       </Link>
     </div>
