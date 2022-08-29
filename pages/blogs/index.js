@@ -35,6 +35,7 @@ export default function Blog({ blogs }) {
     }
   }, [incre, blogs.length]);
 
+
   const handleNext = () => {
     if (incre === blogs.length) {
       setShowNext(false);
