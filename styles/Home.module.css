@@ -127,6 +127,8 @@
   color: #1d1d1f;
   text-decoration: underline;
   margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 700;
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -139,6 +141,8 @@
 .readmorebtnn a {
   color: #1d1d1f;
   text-decoration: underline;
+  font-size: 18px;
+  font-weight: 700;
   font-family: "Cormorant Garamond", serif;
 }
 

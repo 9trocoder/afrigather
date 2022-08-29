@@ -21,16 +21,22 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ blogs }) {
-  const [incre, setIcre] = useState(6);
+  const [incre, setIcre] = useState(5);
   const [shownext, setShowNext] = useState(true);
   const [showprev, setShowPrev] = useState(false);
+
+  console.log(blogs.length)
 
   useEffect(() => {
     if (incre === blogs.length) {
       setShowNext(false);
+    } else if (incre > blogs.length) {
+      setShowNext(false);
     }
 
-    if (incre === 6) {
+
+
+    if (incre === 5) {
       setShowPrev(false);
     }
   }, [incre, blogs.length]);
@@ -40,8 +46,8 @@ export default function Blog({ blogs }) {
     if (incre === blogs.length) {
       setShowNext(false);
       setIcre(incre--);
-    } else if (blogs.length > 6) {
-      if (blogs.length > 6) {
+    } else if (blogs.length > 5) {
+      if (blogs.length > 5) {
         setShowPrev(true);
       } else {
         setShowPrev(false);
@@ -49,11 +55,11 @@ export default function Blog({ blogs }) {
     } else {
       setShowNext(true);
     }
-    setIcre((incre = incre + 1));
+    setIcre((incre = incre + 5));
   };
 
   const handlePrevious = () => {
-    setIcre((incre = incre - 1));
+    setIcre((incre = incre - 5));
     setShowNext(true);
   };
 

@@ -73,6 +73,9 @@
     color: #1d1d1f;
     text-decoration: underline;
     margin-top: 1rem;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    font-weight: 700;
     font-family: "Cormorant Garamond", serif;
   }
 
@@ -119,6 +122,11 @@
 
   .methodstyles  {
     font-size: 34px;
+  }
+
+  .splititna {
+    display: grid;
+    gap: 3rem;
   }
 
   @media screen and (max-width: 900px) {
@@ -215,6 +223,8 @@
         color: #1d1d1f;
         text-decoration: underline;
         margin-top: 1rem;
+        font-size: 18px;
+        font-weight: 700;
         font-family: "Cormorant Garamond", serif;
       }
     
