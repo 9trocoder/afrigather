@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
+import Script from "next/script";
+import { NextSeo } from "next-seo";
+import dimage from "../../public/android-chrome-512x512.png";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -20,12 +24,17 @@ export async function getStaticProps() {
   };
 }
 
+const url = "https://www.afritrump.com/blogs";
+const title = "Blog - Afritrump";
+const description =
+  "Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world.";
+
 export default function Blog({ blogs }) {
   const [incre, setIcre] = useState(5);
   const [shownext, setShowNext] = useState(true);
   const [showprev, setShowPrev] = useState(false);
 
-  console.log(blogs.length)
+  console.log(blogs.length);
 
   useEffect(() => {
     if (incre === blogs.length) {
@@ -34,13 +43,10 @@ export default function Blog({ blogs }) {
       setShowNext(false);
     }
 
-
-
     if (incre === 5) {
       setShowPrev(false);
     }
   }, [incre, blogs.length]);
-
 
   const handleNext = () => {
     if (incre === blogs.length) {
@@ -65,6 +71,28 @@ export default function Blog({ blogs }) {
 
   return (
     <>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+          images: [
+            {
+              url: dimage,
+            },
+          ],
+          site_name: "AfriTrump",
+        }}
+      />
+
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
+        crossorigin="anonymous"
+      />
       <div className={styles.blogscra}>
         {blogs.slice(0, incre).map((blog, key) => (
           <div key={key}>

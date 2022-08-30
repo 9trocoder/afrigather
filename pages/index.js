@@ -2,8 +2,10 @@ import { createClient } from "contentful";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/dist/client/link";
+import { NextSeo } from "next-seo";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
+import dimage from "../public/android-chrome-512x512.png"
 
 export async function getStaticProps() {
   const client = createClient({
@@ -21,17 +23,30 @@ export async function getStaticProps() {
   };
 }
 
+const url = "https://www.afritrump.com/blogs";
+const title = "Blog - Afritrump";
+const description =
+  "Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world.";
+
 export default function Home({ blogs }) {
   return (
     <>
-      <Head>
-        <title>Afri-Trump</title>
-        <meta
-          name="description"
-          content="This is the place to find the critic news"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+     <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+          images: [
+            {
+              url: dimage,
+            },
+          ],
+          site_name: "AfriTrump",
+        }}
+      />
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
