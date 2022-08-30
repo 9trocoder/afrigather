@@ -18,7 +18,7 @@ const Footer = () => {
           </h1>
         </Link>
 
-        <div className={styles.footerbottom_right}><p>Copyright © 2022 AFRIgather All rights reserved.</p>
+        <div className={styles.footerbottom_right}><p>Copyright © 2022 AFRItrump All rights reserved.</p>
         <p>Created by @9trocoder</p></div>
         
       </div>
