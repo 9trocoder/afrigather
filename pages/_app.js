@@ -7,7 +7,6 @@ import * as gtag from "../lib/gtag";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
-  const ADSENSE_ID = process.env.ADSENSE_ID;
   const router = useRouter();
 
   useEffect(() => {
@@ -30,7 +29,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Script
         async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADSENSE_ID}`}
         crossOrigin="anonymous"
       />
 

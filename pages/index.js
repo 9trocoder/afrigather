@@ -29,7 +29,6 @@ const description =
   "Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world.";
 
 export default function Home({ blogs }) {
-  const ADSENSE_ID = process.env.ADSENSE_ID;
   return (
     <>
       <NextSeo
@@ -50,7 +49,7 @@ export default function Home({ blogs }) {
       />
       <Script
         async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADSENSE_ID}`}
         crossOrigin="anonymous"
       />
 
