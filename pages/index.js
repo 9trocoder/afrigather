@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/dist/client/link";
 import styles from "../styles/Home.module.css";
+import Script from "next/script";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -31,7 +32,11 @@ export default function Home({ blogs }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
+        crossorigin="anonymous"
+      />
       <main className={styles.hometop}>
         <div className={styles.main_left}>
           {blogs.slice(0, 1).map((blog, key) => (

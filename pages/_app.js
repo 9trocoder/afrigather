@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import * as gtag from "../lib/gtag";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -29,7 +30,7 @@ function MyApp({ Component, pageProps }) {
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
 
       <Script
