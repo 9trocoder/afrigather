@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
         dangerouslySetInnerHTML={{
           __html: `
           (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: {ADSENSE_ID},
+            google_ad_client: ${process.env.ADSENSE_ID},
             enable_page_level_ads: true
        });
           `,
