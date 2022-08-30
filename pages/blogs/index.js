@@ -106,6 +106,8 @@ export default function Blog({ blogs }) {
           `,
         }}
       />
+
+    
       <div className={styles.blogscra}>
         {blogs.slice(0, incre).map((blog, key) => (
           <div key={key}>
