@@ -93,7 +93,7 @@ export default function BlogDetails({ blog, blogs }) {
         dangerouslySetInnerHTML={{
           __html: `
           (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: {processs.env.ADSENSE_ID},
+            google_ad_client: ${processs.env.ADSENSE_ID},
             enable_page_level_ads: true
        });
           `,
