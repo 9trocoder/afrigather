@@ -30,6 +30,7 @@ const description =
   "Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world.";
 
 export default function Blog({ blogs }) {
+  const ADSENSE_ID = process.env.ADSENSE_ID;
   const [incre, setIcre] = useState(5);
   const [shownext, setShowNext] = useState(true);
   const [showprev, setShowPrev] = useState(false);
@@ -90,8 +91,21 @@ export default function Blog({ blogs }) {
 
       <Script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
-        crossorigin="anonymous"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+        crossOrigin="anonymous"
+      />
+
+      <Script
+        id="adsbygoogle-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: {ADSENSE_ID},
+            enable_page_level_ads: true
+       });
+          `,
+        }}
       />
       <div className={styles.blogscra}>
         {blogs.slice(0, incre).map((blog, key) => (

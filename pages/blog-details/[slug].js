@@ -58,6 +58,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogDetails({ blog, blogs }) {
+  const ADSENSE_ID = process.env.ADSENSE_ID;
   if (!blog) return <Skeleton />;
   const { featuredImage, title, authors, method, date, subTItle, slug } =
     blog.fields;
@@ -81,10 +82,23 @@ export default function BlogDetails({ blog, blogs }) {
           site_name: "AfriTrump",
         }}
       />
-      <Script
+       <Script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
-        crossorigin="anonymous"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+        crossOrigin="anonymous"
+      />
+
+      <Script
+        id="adsbygoogle-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: {ADSENSE_ID},
+            enable_page_level_ads: true
+       });
+          `,
+        }}
       />
 
       <div className={styles.blogdetailsbody}>

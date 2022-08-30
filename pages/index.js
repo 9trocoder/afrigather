@@ -5,7 +5,7 @@ import Link from "next/dist/client/link";
 import { NextSeo } from "next-seo";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
-import dimage from "../public/android-chrome-512x512.png"
+import dimage from "../public/android-chrome-512x512.png";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -29,9 +29,10 @@ const description =
   "Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world.";
 
 export default function Home({ blogs }) {
+  const ADSENSE_ID = process.env.ADSENSE_ID;
   return (
     <>
-     <NextSeo
+      <NextSeo
         title={title}
         description={description}
         canonical={url}
@@ -49,8 +50,21 @@ export default function Home({ blogs }) {
       />
       <Script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
-        crossorigin="anonymous"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+        crossOrigin="anonymous"
+      />
+
+      <Script
+        id="adsbygoogle-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: {ADSENSE_ID},
+            enable_page_level_ads: true
+       });
+          `,
+        }}
       />
       <main className={styles.hometop}>
         <div className={styles.main_left}>
