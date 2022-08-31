@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         crossOrigin="anonymous"
       />
 
-      <Script
+      {/* <Script
         id="adsbygoogle-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }) {
        });
           `,
         }}
-      />
+      /> */}
 
       <Script
         id="gtag-init"

@@ -94,7 +94,7 @@ export default function Blog({ blogs }) {
         crossOrigin="anonymous"
       />
 
-      <Script
+      {/* <Script
         id="adsbygoogle-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -105,7 +105,7 @@ export default function Blog({ blogs }) {
        });
           `,
         }}
-      />
+      /> */}
 
     
       <div className={styles.blogscra}>

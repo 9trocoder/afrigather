@@ -53,7 +53,7 @@ export default function Home({ blogs }) {
         crossOrigin="anonymous"
       />
 
-      <Script
+      {/* <Script
         id="adsbygoogle-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -64,7 +64,7 @@ export default function Home({ blogs }) {
        });
           `,
         }}
-      />
+      /> */}
       <main className={styles.hometop}>
         <div className={styles.main_left}>
           {blogs.slice(0, 1).map((blog, key) => (

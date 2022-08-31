@@ -86,19 +86,19 @@ export default function BlogDetails({ blog, blogs }) {
         src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADSENSE_ID}`}
         crossOrigin="anonymous"
       />
-
+{/* 
       <Script
         id="adsbygoogle-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-          (adsbygoogle = window.adsbygoogle || []).push({
+          (window.adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: ${processs.env.ADSENSE_ID},
             enable_page_level_ads: true
        });
           `,
         }}
-      />
+      /> */}
 
       <div className={styles.blogdetailsbody}>
         <div className={styles.blogdetailsleft}>
