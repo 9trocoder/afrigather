@@ -71,6 +71,13 @@ export default function Blog({ blogs }) {
 
   return (
     <>
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
       <NextSeo
         title={title}
         description={description}
@@ -88,12 +95,6 @@ export default function Blog({ blogs }) {
         }}
       />
 
-      <Script
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADSENSE_ID}`}
-        crossOrigin="anonymous"
-      />
-
       {/* <Script
         id="adsbygoogle-init"
         strategy="afterInteractive"
@@ -107,7 +108,6 @@ export default function Blog({ blogs }) {
         }}
       /> */}
 
-    
       <div className={styles.blogscra}>
         {blogs.slice(0, incre).map((blog, key) => (
           <div key={key}>

@@ -31,6 +31,13 @@ const description =
 export default function Home({ blogs }) {
   return (
     <>
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
       <NextSeo
         title={title}
         description={description}
@@ -46,11 +53,6 @@ export default function Home({ blogs }) {
           ],
           site_name: "AfriTrump",
         }}
-      />
-      <Script
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADSENSE_ID}`}
-        crossOrigin="anonymous"
       />
 
       {/* <Script

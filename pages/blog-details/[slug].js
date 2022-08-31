@@ -30,7 +30,6 @@ export const getStaticPaths = async () => {
   };
 };
 
-
 export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
     content_type: "blog",
@@ -65,6 +64,13 @@ export default function BlogDetails({ blog, blogs }) {
 
   return (
     <>
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
       <NextSeo
         title={title}
         description={subTItle}
@@ -81,12 +87,8 @@ export default function BlogDetails({ blog, blogs }) {
           site_name: "AfriTrump",
         }}
       />
-       <Script
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADSENSE_ID}`}
-        crossOrigin="anonymous"
-      />
-{/* 
+
+      {/* 
       <Script
         id="adsbygoogle-init"
         strategy="afterInteractive"
