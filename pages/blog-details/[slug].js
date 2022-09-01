@@ -63,6 +63,8 @@ export default function BlogDetails({ blog, blogs }) {
     blog.fields;
   const url = `https://www.afritrump.com/blog-details/${slug}`;
 
+  const slugimage = `https:${featuredImage.fields.file.url}`;
+
   return (
     <>
       <Head>
@@ -75,7 +77,10 @@ export default function BlogDetails({ blog, blogs }) {
         <meta property="og:description" content={subTItle} />
         <link rel="canonical" href="/" />
         <meta name={title} content={subTItle} />
-        <meta name="google-site-verification" content="rXoaV__VaP0MRsn0me2EVThs9iLl0dAhnJHgQUj7SPM" />
+        <meta
+          name="google-site-verification"
+          content="rXoaV__VaP0MRsn0me2EVThs9iLl0dAhnJHgQUj7SPM"
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
@@ -92,7 +97,7 @@ export default function BlogDetails({ blog, blogs }) {
           description: subTItle,
           images: [
             {
-              url: `https:${featuredImage.fields.file.url}`,
+              url: slugimage,
             },
           ],
           site_name: "AfriTrump",
