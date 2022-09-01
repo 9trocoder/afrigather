@@ -92,10 +92,7 @@ export default function Blog({ blogs }) {
           name="Afritrump"
           content="Here in Afritrump, We deliver live events as they happen arround Africa and the world."
         />
-        <meta
-          name="google-site-verification"
-          content="UzGrXflIUP7j4fCvSUYsiYT4UK920F4umosRxElAcAU"
-        />
+      <meta name="google-site-verification" content="rXoaV__VaP0MRsn0me2EVThs9iLl0dAhnJHgQUj7SPM" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
