@@ -5,6 +5,7 @@ import Link from "next/dist/client/link";
 import { NextSeo } from "next-seo";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
+import * as gtag from "../lib/gtag";
 import dimage from "../public/android-chrome-512x512.png";
 
 export async function getStaticProps() {

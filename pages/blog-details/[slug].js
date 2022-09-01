@@ -7,6 +7,7 @@ import { NextSeo } from "next-seo";
 import styles from "../../styles/detailslug.module.css";
 import Script from "next/script";
 import Head from "next/head";
+import * as gtag from "../../lib/gtag";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
