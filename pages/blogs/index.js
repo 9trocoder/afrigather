@@ -88,7 +88,7 @@ export default function Blog({ blogs }) {
           property="og:description"
           content="Here in Afritrump, We deliver live events as they happen arround Africa and the world."
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="/blogs" />
         <meta
           name="Afritrump"
           content="Here in Afritrump, We deliver live events as they happen arround Africa and the world."

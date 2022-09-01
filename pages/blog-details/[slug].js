@@ -73,9 +73,9 @@ export default function BlogDetails({ blog, blogs }) {
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
         <meta property="og:image:alt" content="Teaching" />
-        <meta property="og:url" content={`https://afritrump.com/${slug}`} />
+        <meta property="og:url" content={`https://afritrump/blog-details/${slug}`} />
         <meta property="og:description" content={subTItle} />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href={`/blog-details/${slug}`} />
         <meta name={title} content={subTItle} />
         <meta
           name="google-site-verification"
