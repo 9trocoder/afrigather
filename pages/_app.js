@@ -5,6 +5,14 @@ import Layout from "../components/Layout";
 import "../styles/globals.css";
 import * as gtag from "../lib/gtag";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
+
+const url = "https://www.afritrump.com/";
+const title = "Afritrump News";
+const description =
+  "Afritrump is your one number news blog for real-time premium news stories. We deliver news daily to you.";
+
+  const imageda = "https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -24,12 +32,50 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+      <meta
+          property="og:image"
+          content="https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="Teaching" />
+        <meta property="og:url" content="https://afritrump.com/blogs" />
+        <meta
+          property="og:description"
+          content="Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world."
+        />
+        <link rel="canonical" href="/" />
+        <meta
+          name="Afritrump"
+          content="Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world."
+        />
+        <meta
+          name="google-site-verification"
+          content="UzGrXflIUP7j4fCvSUYsiYT4UK920F4umosRxElAcAU"
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
           crossOrigin="anonymous"
         ></script>
       </Head>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+          images: [
+            {
+              url: imageda,
+            },
+          ],
+          site_name: "AfriTrump",
+        }}
+      />
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}

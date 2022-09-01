@@ -27,6 +27,7 @@ const url = "https://www.afritrump.com/blogs";
 const title = "Blog - Afritrump";
 const description =
   "Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world.";
+  const imageda = "https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png";
 
 export default function Home({ blogs }) {
   return (
@@ -70,7 +71,7 @@ export default function Home({ blogs }) {
           description,
           images: [
             {
-              url: dimage,
+              url: imageda,
             },
           ],
           site_name: "AfriTrump",

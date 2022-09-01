@@ -65,6 +65,19 @@ export default function BlogDetails({ blog, blogs }) {
   return (
     <>
       <Head>
+        <meta property="og:image" content={featuredImage} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="Teaching" />
+        <meta property="og:url" content="https://afritrump.com/" />
+        <meta property="og:description" content={subTItle} />
+        <link rel="canonical" href="/" />
+        <meta name={title} content={subTItle} />
+        <meta
+          name="google-site-verification"
+          content="UzGrXflIUP7j4fCvSUYsiYT4UK920F4umosRxElAcAU"
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"

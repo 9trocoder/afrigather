@@ -25,9 +25,11 @@ export async function getStaticProps() {
 }
 
 const url = "https://www.afritrump.com/blogs";
-const title = "Blog - Afritrump";
+const title = "Afritrump Blogs";
 const description =
-  "Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world.";
+  "Here in Afritrump We deliver live events as they happen arround Africa and the world.";
+  const imageda = "https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png";
+
 
 export default function Blog({ blogs }) {
   const [incre, setIcre] = useState(5);
@@ -72,6 +74,28 @@ export default function Blog({ blogs }) {
   return (
     <>
       <Head>
+      <meta
+          property="og:image"
+          content="https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="Teaching" />
+        <meta property="og:url" content="https://afritrump.com/blogs" />
+        <meta
+          property="og:description"
+          content="Here in Afritrump, We deliver live events as they happen arround Africa and the world."
+        />
+        <link rel="canonical" href="/" />
+        <meta
+          name="Afritrump"
+          content="Here in Afritrump, We deliver live events as they happen arround Africa and the world."
+        />
+        <meta
+          name="google-site-verification"
+          content="UzGrXflIUP7j4fCvSUYsiYT4UK920F4umosRxElAcAU"
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
@@ -88,7 +112,7 @@ export default function Blog({ blogs }) {
           description,
           images: [
             {
-              url: dimage,
+              url: imageda,
             },
           ],
           site_name: "AfriTrump",
