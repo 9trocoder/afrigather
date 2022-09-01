@@ -70,7 +70,7 @@ export default function BlogDetails({ blog, blogs }) {
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
         <meta property="og:image:alt" content="Teaching" />
-        <meta property="og:url" content="https://afritrump.com/" />
+        <meta property="og:url" content={`https://afritrump.com/${slug}`} />
         <meta property="og:description" content={subTItle} />
         <link rel="canonical" href="/" />
         <meta name={title} content={subTItle} />
@@ -94,7 +94,7 @@ export default function BlogDetails({ blog, blogs }) {
           description: subTItle,
           images: [
             {
-              url: featuredImage,
+              url: `https:${featuredImage.fields.file.url}`,
             },
           ],
           site_name: "AfriTrump",
