@@ -97,6 +97,10 @@ export default function BlogDetails({ blog, blogs }) {
           site_name: "AfriTrump",
         }}
       />
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
 
       {/* 
       <Script

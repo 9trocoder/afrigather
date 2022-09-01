@@ -56,6 +56,7 @@ function MyApp({ Component, pageProps }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
           crossOrigin="anonymous"
         ></script>
+        
       </Head>
       <NextSeo
         title={title}
