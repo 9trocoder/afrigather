@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.afritrump.com/
+
+# Sitemaps
+Sitemap: https://afritrump.com/
+Sitemap: https://afritrump.com/sitemap-0.xml
+Sitemap: https://www.afritrump.com/blogs
+Sitemap: https://www.afritrump.com/sitemap.xml
+Sitemap: https://www.afritrump.com/server-sitemap.xml
