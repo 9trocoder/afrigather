@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/inline-script-id */
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { createClient } from "contentful";
 import Image from "next/image";
@@ -68,13 +69,16 @@ export default function BlogDetails({ blog, blogs }) {
   return (
     <>
       <Head>
-      <meta name="propeller" content="be242d24b3f57b1843b2f3acf35526a1" />
+        <meta name="propeller" content="be242d24b3f57b1843b2f3acf35526a1" />
         <meta property="og:image" content={slugimage} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
         <meta property="og:image:alt" content="Teaching" />
-        <meta property="og:url" content={`https://afritrump/blog-details/${slug}`} />
+        <meta
+          property="og:url"
+          content={`https://afritrump/blog-details/${slug}`}
+        />
         <meta property="og:description" content={subTItle} />
         <link rel="canonical" href={`/blog-details/${slug}`} />
         <meta name={title} content={subTItle} />
@@ -87,15 +91,16 @@ export default function BlogDetails({ blog, blogs }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
           crossOrigin="anonymous"
         ></script>
-        <script type="text/javascript">(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365461,document.body||document.documentElement)
-        </script>
-        <script>
-          (function(s,u,z,p) [ s.src=u, s.setAttribute( "data-zone", z ),
-          p.appendChild(s) ]) ( document.createElement('script'),
-          'https://inklinkor.com/tag.min.js', 5365461,
-          document.body||document.documentElement )
-        </script>
       </Head>
+
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365461,document.body||document.documentElement)
+          `,
+        }}
+      />
       <NextSeo
         title={title}
         description={subTItle}

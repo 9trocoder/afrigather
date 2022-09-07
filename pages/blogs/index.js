@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/inline-script-id */
 /* eslint-disable react/no-unescaped-entities */
 import { createClient } from "contentful";
 import { useState, useEffect } from "react";
@@ -102,16 +103,16 @@ export default function Blog({ blogs }) {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
           crossOrigin="anonymous"
-        ></script><script type="text/javascript">(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365461,document.body||document.documentElement)
-        </script>
-        <script>
-          (function(s,u,z,p) [ s.src=u, s.setAttribute( "data-zone", z ),
-          p.appendChild(s) ]) ( document.createElement('script'),
-          'https://inklinkor.com/tag.min.js', 5365461,
-          document.body||document.documentElement )
-        </script>
-        
+        ></script>
       </Head>
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365461,document.body||document.documentElement)
+          `,
+        }}
+      />
       <NextSeo
         title={title}
         description={description}
