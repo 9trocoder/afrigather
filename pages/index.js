@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { createClient } from "contentful";
 import Head from "next/head";
 import Image from "next/image";
@@ -54,6 +55,14 @@ export default function Home({ blogs }) {
           content="Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world."
         />
         <meta name="google-site-verification" content="rXoaV__VaP0MRsn0me2EVThs9iLl0dAhnJHgQUj7SPM" />
+        <script type="text/javascript">(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365461,document.body||document.documentElement)
+        </script>
+        <script>
+          (function(s,u,z,p) [ s.src=u, s.setAttribute( "data-zone", z ),
+          p.appendChild(s) ]) ( document.createElement('script'),
+          'https://inklinkor.com/tag.min.js', 5365461,
+          document.body||document.documentElement )
+        </script>
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"

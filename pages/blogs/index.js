@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { createClient } from "contentful";
 import { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.css";
@@ -29,8 +30,7 @@ const url = "https://www.afritrump.com/blogs";
 const title = "Afritrump Blogs";
 const description =
   "Here in Afritrump We deliver live events as they happen arround Africa and the world.";
-  const imageda = "https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png";
-
+const imageda = "https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png";
 
 export default function Blog({ blogs }) {
   const [incre, setIcre] = useState(5);
@@ -75,8 +75,8 @@ export default function Blog({ blogs }) {
   return (
     <>
       <Head>
-      <meta name="propeller" content="be242d24b3f57b1843b2f3acf35526a1" />
-      <meta
+        <meta name="propeller" content="be242d24b3f57b1843b2f3acf35526a1" />
+        <meta
           property="og:image"
           content="https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png"
         />
@@ -94,12 +94,23 @@ export default function Blog({ blogs }) {
           name="Afritrump"
           content="Here in Afritrump, We deliver live events as they happen arround Africa and the world."
         />
-      <meta name="google-site-verification" content="rXoaV__VaP0MRsn0me2EVThs9iLl0dAhnJHgQUj7SPM" />
+        <meta
+          name="google-site-verification"
+          content="rXoaV__VaP0MRsn0me2EVThs9iLl0dAhnJHgQUj7SPM"
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
           crossOrigin="anonymous"
-        ></script>
+        ></script><script type="text/javascript">(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365461,document.body||document.documentElement)
+        </script>
+        <script>
+          (function(s,u,z,p) [ s.src=u, s.setAttribute( "data-zone", z ),
+          p.appendChild(s) ]) ( document.createElement('script'),
+          'https://inklinkor.com/tag.min.js', 5365461,
+          document.body||document.documentElement )
+        </script>
+        
       </Head>
       <NextSeo
         title={title}
