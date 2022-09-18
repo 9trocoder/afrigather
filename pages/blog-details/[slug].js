@@ -93,14 +93,14 @@ export default function BlogDetails({ blog, blogs }) {
         ></script>
       </Head>
 
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           (function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365461,document.body||document.documentElement)
           `,
         }}
-      />
+      /> */}
       <NextSeo
         title={title}
         description={subTItle}
