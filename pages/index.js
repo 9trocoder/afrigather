@@ -48,7 +48,7 @@ export default function Home({ blogs }) {
         <meta property="og:url" content="https://afritrump.com/" />
         <meta
           property="og:description"
-          content="Afritrump is your one number news blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world."
+          content="Afritrump is your one number news Blog for real-time premium news stories. We deliver live events as they happen arround Africa and the world."
         />
         <link rel="canonical" href="/" />
         <meta
