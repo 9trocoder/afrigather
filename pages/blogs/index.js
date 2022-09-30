@@ -101,7 +101,7 @@ export default function Blog({ blogs }) {
         />
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197029786441774"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4745428687293641"
           crossOrigin="anonymous"
         ></script>
       </Head>
