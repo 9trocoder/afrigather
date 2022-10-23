@@ -69,7 +69,6 @@ export default function BlogDetails({ blog, blogs }) {
   return (
     <>
       <Head>
-        <meta name="propeller" content="be242d24b3f57b1843b2f3acf35526a1" />
         <meta property="og:image" content={slugimage} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="400" />

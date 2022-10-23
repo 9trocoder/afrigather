@@ -36,7 +36,6 @@ export default function Home({ blogs }) {
   return (
     <>
       <Head>
-        <meta name="propeller" content="be242d24b3f57b1843b2f3acf35526a1" />
         <meta
           property="og:image"
           content="https://i.ibb.co/GQ4mCc2/android-chrome-512x512.png"
