@@ -58,9 +58,8 @@ function MyApp({ Component, pageProps }) {
         />
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4745428687293641"
-          crossOrigin="anonymous"
-        ></script>
+          s src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4745428687293641"
+          crossorigin="anonymous"></script>
       </Head>
       {/* <Script
         strategy="afterInteractive"
